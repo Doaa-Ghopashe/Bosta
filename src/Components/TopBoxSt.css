@@ -1,0 +1,55 @@
+.container{
+    max-width: 100% !important;
+    padding: 140px 0;
+}
+.row{
+    width: 100% !important; 
+    margin: 0;
+}
+.col-xl-8{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+}
+.rectangel{
+    background-color: yellow;
+    width: 500px;
+    height: 300px;
+    border-radius:12px ;
+    position: relative;
+    background-image: url(https://bosta.co/841cb0d0f210d54dd999cb2ed74eb5a9.png);
+    background-size: 1000px;
+    background-position: center;
+}
+.rotaterectangel45{
+    background-color: blueviolet;
+    width: 500px;
+    height: 300px;
+    border-radius: 14px;
+    inset: 0;
+    margin: auto;
+    position: absolute;
+    transform: rotate(60deg);
+    z-index: -1;
+}
+.rotaterectangel45::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(https://bosta.co/841cb0d0f210d54dd999cb2ed74eb5a9.png);
+    background-size: 1000px;
+    background-position: center;
+    transform: rotate(0deg);
+}
+.rotaterectangel-45{
+    background-color: blueviolet;
+    background-image: url(https://bosta.co/841cb0d0f210d54dd999cb2ed74eb5a9.png);
+    width: 500px;
+    height: 300px;
+    border-radius: 14px;
+    inset: 0;
+    position: absolute;
+    transform: rotate(-60deg);
+    z-index: -1;
+}
